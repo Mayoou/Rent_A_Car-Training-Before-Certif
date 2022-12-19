@@ -1,7 +1,8 @@
 class BookingsController < ApplicationController
 
     def index
-        @bookings = current_user.bookings
+        # @bookings = current_user.bookings
+        @bookings = Booking.all
     end
 
     def show
@@ -18,7 +19,7 @@ class BookingsController < ApplicationController
         else
             render :new, status: :unprocessable_entity
         end
-    new
+    end
 
     def edit
         @booking = Booking.find(params[:id])
@@ -47,3 +48,4 @@ class BookingsController < ApplicationController
     def booking_params
         params.require(:booking).permit(:start_date, :end_date, :car_id, :user_id)
     end
+end
