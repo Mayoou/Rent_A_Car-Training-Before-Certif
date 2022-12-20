@@ -1,5 +1,6 @@
 class Car < ApplicationRecord
-  belongs_to :user
-
+  
   validates :brand, :model, :price, presence: true
+  BRANDS = ["Volkswagen", "Peugeot", "Mazerati", "Lancia", "Honda", "Citroen", "Mercedes", "Alfa Roméo", "BMW"]
+
 end
