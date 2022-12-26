@@ -1,4 +1,4 @@
-👋 Welcome to Thomas's GitHub Profile aka. @Mayoou , a back-end rookie developer !
+👋 Welcome to Thomas's GitHub Profile aka. @Mayoou, a back-end rookie developer !
 
 ----------------------------------------
 
